@@ -1,5 +1,6 @@
 export const enquiryCategories = [
   "Patient education enquiry",
+  "Second opinion for breast conservation",
   "Academic collaboration",
   "Industry / medtech collaboration",
   "Speaking or media invitation",

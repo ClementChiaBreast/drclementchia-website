@@ -95,6 +95,62 @@ export default function BreastConservation() {
 
     <EvidenceReferences />
 
+    <section className="page-shell py-24 sm:py-32">
+      <div className="grid gap-10 lg:grid-cols-[.62fr_1.38fr]">
+        <div>
+          <p className="eyebrow text-[var(--coral)]">Second opinion</p>
+        </div>
+        <div>
+          <h2 className="section-title">
+            Second opinion for{" "}
+            <i className="font-normal text-[var(--coral)]">breast conservation.</i>
+          </h2>
+          <div className="muted mt-8 max-w-4xl space-y-5 text-base leading-8">
+            <p>
+              For some women, the choice between mastectomy and
+              breast-conserving surgery may not be straightforward. Tumour size,
+              tumour location, breast size, imaging findings, margins, genetic
+              risk, previous treatment, overall health and personal priorities
+              can all influence what is safely possible.
+            </p>
+            <p>
+              Patients who have been advised to consider mastectomy, or who are
+              uncertain whether breast conservation is feasible, may seek a
+              focused second opinion to better understand their options. The aim
+              is not to recommend breast conservation for everyone, but to
+              carefully assess whether breast-preserving treatment may be
+              oncologically safe, technically achievable and aligned with the
+              patient’s goals.
+            </p>
+            <p>
+              Where appropriate, this discussion may include oncoplastic
+              techniques, localisation strategies for non-palpable lesions,
+              approaches to margin planning, reconstruction options, and the
+              role of multidisciplinary treatment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-14 border-y hairline bg-[var(--paper)] p-7 sm:p-10">
+        <div className="grid items-end gap-8 lg:grid-cols-[1.25fr_.75fr]">
+          <div>
+            <p className="eyebrow text-[var(--coral)]">Breast conservation opinion</p>
+            <h3 className="serif mt-6 text-4xl leading-[1.08] tracking-[-.035em] sm:text-5xl">
+              Considering a second opinion on breast conservation?
+            </h3>
+            <p className="muted mt-6 max-w-3xl text-base leading-8">
+              If you have been advised to undergo mastectomy or are uncertain
+              whether breast-conserving surgery is possible, you may enquire
+              about a consultation to review your options. Please bring your
+              imaging reports, biopsy results, pathology reports and treatment
+              recommendations where available.
+            </p>
+          </div>
+          <TextLink href="/contact">Enquire about a breast conservation opinion</TextLink>
+        </div>
+      </div>
+    </section>
+
     <section className="page-shell grid border-x hairline md:grid-cols-3">{[{label:"For patients",text:"Learn about breast conservation options",href:"/breast-conservation"},{label:"For academics",text:"Explore breast conservation research themes",href:"/research-innovation"},{label:"For industry",text:"Collaborate on breast conservation innovation",href:"/contact"}].map((item)=><Link key={item.label} href={item.href} className="group flex min-h-64 flex-col justify-between border-b border-r hairline p-8 last:border-r-0"><span className="eyebrow text-[var(--coral)]">{item.label}</span><span className="serif flex items-end justify-between gap-5 text-3xl leading-tight">{item.text}<Arrow className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-2"/></span></Link>)}</section>
     <PullQuote>Breast conservation through surgery, education and innovation.</PullQuote>
   </>;
