@@ -33,7 +33,7 @@ export function SiteFooter() {
       <div className="flex flex-col justify-between border-l border-white/15 pl-7">
         <CrossMark className="h-14 w-14 text-[var(--lime)]" />
         <div className="mt-16 grid grid-cols-2 gap-4 text-sm">
-          {[["About","/about"],["Breast conservation","/breast-conservation"],["Clinical work","/clinical-work"],["Innovation","/innovation"],["Research","/research"],["Education & electives","/teaching"],["Media & articles","/media-articles"],["Contact","/contact"]].map(([l,h]) => <Link key={h} href={h} className="text-[#e2e8e3] transition-colors hover:text-white">{l}</Link>)}
+          {[["About","/about"],["Breast conservation","/breast-conservation"],["Clinical work","/clinical-work"],["Innovation","/innovation"],["Research","/research"],["Electives","/teaching"],["Media & articles","/media-articles"],["Contact","/contact"]].map(([l,h]) => <Link key={h} href={h} className="text-[#e2e8e3] transition-colors hover:text-white">{l}</Link>)}
         </div>
       </div>
     </div>
