@@ -1,41 +1,45 @@
 import { PageHero, PullQuote, TextLink } from "@/components/primitives";
 
 export const metadata = {
-  title: "Breast Surgery Fellowship",
+  title: "Breast Conservation Surgery Fellowship",
   description:
-    "Advanced breast conservation, oncoplastic surgery, minimally invasive techniques, precision localisation, and clinician-led innovation.",
+    "Advanced oncoplastic, minimally invasive, localisation and innovation strategies to help surgeons increase safe breast conservation.",
 };
 
 const focusAreas = [
   {
     index: "01",
-    title: "Advanced oncoplastic breast conservation",
-    text: "Exposure to contemporary oncoplastic breast-conserving techniques, including volume displacement, volume replacement, chest wall perforator flaps, therapeutic mammoplasty, breast reduction approaches, symmetrisation strategies, and aesthetic planning in breast cancer surgery.",
+    title: "Oncoplastic strategies to extend breast conservation",
+    text: "Focused exposure to oncoplastic techniques that allow wider excision while preserving breast form. This includes chest wall perforator flaps, volume displacement, volume replacement, therapeutic mammoplasty, breast reduction approaches, symmetrisation strategies and aesthetic planning. The emphasis is on using oncoplastic principles to convert suitable patients from mastectomy or poor-cosmesis lumpectomy towards safe and acceptable breast-conserving surgery.",
   },
   {
     index: "02",
-    title: "Minimally invasive breast surgery",
-    text: "Focused exposure to minimally invasive and single-port transaxillary approaches in selected breast surgery cases, with emphasis on patient selection, operative planning, technical principles, cosmesis, and safe integration into breast conservation practice.",
+    title: "Minimally invasive breast-conserving approaches",
+    text: "Exposure to selected minimally invasive and single-port transaxillary approaches relevant to breast conservation. The focus is on patient selection, incision planning, operative access, tumour localisation, cosmetic outcomes and safe integration into breast cancer surgery. The aim is not minimally invasive surgery for its own sake, but its role in supporting breast preservation and reducing visible surgical impact in appropriately selected patients.",
   },
   {
     index: "03",
     title: "Precision localisation and margin strategy",
-    text: "Learning around localisation strategies for non-palpable breast lesions, image-guided surgical planning, targeted excision, intra-operative decision-making, and approaches to reducing avoidable re-excision after breast-conserving surgery.",
+    text: "Learning around localisation of non-palpable breast lesions, image-guided surgical planning, targeted excision, specimen orientation, intra-operative decision-making and strategies to reduce avoidable re-excision after breast-conserving surgery. The emphasis is on achieving clear margins while avoiding unnecessary tissue removal, thereby supporting both oncological safety and breast preservation.",
   },
   {
     index: "04",
-    title: "Research, digital health and medtech innovation",
-    text: "Opportunities to engage with research and innovation around oncoplastic breast surgery, breast conservation pathways, digital patient education, patient-reported outcomes, intra-operative margin assessment, and clinician-led medtech translation.",
+    title: "Innovation to increase breast conservation rates",
+    text: "Opportunities to engage with research, digital health and medtech innovation that directly support breast conservation pathways. This may include intra-operative margin assessment, low-thermal surgical devices, digital patient education, patient-reported outcomes, surgical decision support, workflow redesign and clinician-led medtech translation. The emphasis is on innovation that addresses real clinical barriers to breast conservation, rather than technology for its own sake.",
   },
 ];
 
 const learningExperience = [
-  "Breast clinics and multidisciplinary decision-making",
-  "Operating theatre exposure and operative planning",
-  "Oncoplastic and breast conservation case discussion",
-  "Localisation and margin management strategies",
-  "Research, publication and innovation project exposure",
-  "Digital health and medtech translation through projects such as REBORN and intra-operative margin assessment",
+  "Breast conservation clinics and multidisciplinary treatment planning",
+  "Oncoplastic case selection and operative planning",
+  "Chest wall perforator flaps, therapeutic mammoplasty and symmetrisation principles",
+  "Minimally invasive and single-port transaxillary breast-conserving approaches in selected cases",
+  "Precision localisation strategies for non-palpable lesions",
+  "Margin management and re-excision reduction strategies",
+  "Specimen orientation, intra-operative decision-making and tissue preservation",
+  "Research projects focused on improving breast conservation pathways",
+  "Digital health and patient education projects such as REBORN",
+  "Medtech translation around margin assessment, tissue-conscious surgery and surgical decision support",
 ];
 
 export default function FellowshipPage() {
@@ -44,21 +48,33 @@ export default function FellowshipPage() {
       <PageHero
         number="06"
         eyebrow="Fellowship"
-        title="Breast Surgery"
+        title="Breast Conservation Surgery"
         italic="Fellowship."
-        intro="Advanced breast conservation, oncoplastic surgery, minimally invasive techniques, precision localisation, and clinician-led innovation."
+        intro="Advanced oncoplastic, minimally invasive, localisation and innovation strategies to help surgeons increase safe breast conservation."
       />
 
       <section className="page-shell border-x border-t hairline px-5 py-14 sm:px-10">
-        <p className="muted max-w-4xl text-base leading-8 sm:text-lg">
-          Dr Chia offers fellowship and attachment opportunities for breast
-          surgeons seeking focused exposure to advanced breast conservation,
-          oncoplastic breast surgery, minimally invasive approaches, precision
-          localisation, and innovation in breast cancer care. The fellowship is
-          designed for surgeons who wish to deepen their operative, clinical,
-          academic, and innovation capabilities within a contemporary breast
-          surgery programme.
-        </p>
+        <div className="muted max-w-4xl space-y-5 text-base leading-8 sm:text-lg">
+          <p>
+            Dr Chia offers focused fellowship and attachment opportunities for
+            breast surgeons seeking to expand their ability to offer safe,
+            precise and aesthetically considered breast-conserving surgery.
+          </p>
+          <p>
+            The fellowship is built around a single clinical objective: helping
+            surgeons increase breast conservation rates for suitable patients
+            without compromising oncological safety, margin control or
+            patient-centred aesthetic outcomes.
+          </p>
+          <p>
+            Rather than teaching oncoplastic surgery, minimally invasive surgery,
+            localisation and innovation as separate topics, the programme
+            integrates them as complementary strategies to overcome common
+            barriers to breast conservation — including tumour-to-breast size
+            mismatch, non-palpable lesions, cosmetic concerns, margin
+            uncertainty, and avoidable re-excision.
+          </p>
+        </div>
       </section>
 
       <section className="page-shell py-24 sm:py-32">
@@ -67,7 +83,7 @@ export default function FellowshipPage() {
             <p className="eyebrow text-[var(--coral)]">Fellowship focus areas</p>
           </div>
           <h2 className="section-title">
-            Focused exposure across <i className="font-normal text-[var(--coral)]">surgery, planning and translation.</i>
+            Strategies to increase <i className="font-normal text-[var(--coral)]">safe and appropriate breast conservation.</i>
           </h2>
         </div>
         <div className="mt-14 grid border-l border-t hairline lg:grid-cols-2">
@@ -89,17 +105,32 @@ export default function FellowshipPage() {
             <p className="eyebrow text-[var(--coral)]">Who this is for</p>
           </div>
           <p className="serif text-3xl leading-tight tracking-[-.03em] sm:text-5xl">
-            This fellowship is intended for breast surgeons, surgical fellows, or
-            senior trainees who wish to develop a deeper understanding of breast
-            conservation, oncoplastic techniques, minimally invasive breast
-            surgery, and translational innovation in breast cancer care.
+            This fellowship is intended for breast surgeons, surgical fellows or
+            senior trainees who wish to develop a deeper
+            breast-conservation-focused skill set.
           </p>
           <div className="lg:col-start-2">
-            <p className="muted max-w-3xl text-[15px] leading-7">
-              The structure and duration of attachment will depend on
-              institutional requirements, clinical privileges, observership
-              rules, supervision capacity, and the fellow’s prior experience.
-            </p>
+            <div className="muted max-w-3xl space-y-5 text-[15px] leading-7">
+              <p>
+                It is especially suited to surgeons who want to increase safe
+                and appropriate breast conservation rates through oncoplastic
+                planning, minimally invasive approaches, precision localisation,
+                re-excision reduction strategies and translational innovation.
+              </p>
+              <p>
+                The fellowship is not designed as a generic breast surgery
+                observership. It is intended for surgeons who are specifically
+                interested in building a breast conservation programme or
+                strengthening breast-conserving surgical options within their
+                own practice setting.
+              </p>
+              <p>
+                The structure and duration of attachment will depend on
+                institutional requirements, observership or fellowship
+                arrangements, clinical privileges, supervision capacity and the
+                fellow’s prior experience.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -125,22 +156,30 @@ export default function FellowshipPage() {
           <div>
             <p className="eyebrow text-[var(--cream)]">Fellowship enquiry</p>
             <h2 className="serif mt-8 text-[clamp(3rem,6vw,6.5rem)] leading-[.93] tracking-[-.05em]">
-              Interested in a breast surgery <i className="font-normal text-[var(--cream)]">fellowship or observership?</i>
+              Interested in a Breast Conservation Surgery <i className="font-normal text-[var(--cream)]">Fellowship?</i>
             </h2>
-            <p className="mt-8 max-w-3xl text-base leading-8 text-white/90">
-              Suitably qualified breast surgeons or surgical trainees may enquire
-              about focused fellowship or attachment opportunities in advanced
-              breast conservation, oncoplastic surgery, minimally invasive breast
-              surgery, and surgical innovation. Availability depends on
-              institutional approval, supervision capacity, clinical governance
-              requirements, and annual programme planning.
-            </p>
+            <div className="mt-8 max-w-3xl space-y-5 text-base leading-8 text-white/90">
+              <p>
+                Suitably qualified breast surgeons or senior surgical trainees
+                may enquire about focused fellowship or attachment opportunities
+                in breast conservation surgery. The fellowship is designed for
+                surgeons who wish to strengthen their ability to preserve the
+                breast safely and appropriately through oncoplastic techniques,
+                minimally invasive approaches, precision localisation, margin
+                strategy and innovation.
+              </p>
+              <p>
+                Availability depends on institutional approval, supervision
+                capacity, clinical governance requirements and annual programme
+                planning.
+              </p>
+            </div>
           </div>
           <TextLink href="/contact">Enquire about fellowship</TextLink>
         </div>
       </section>
 
-      <PullQuote>Advanced breast conservation through focused surgical learning and responsible innovation.</PullQuote>
+      <PullQuote>Increasing safe breast conservation through surgical strategy, precision and responsible innovation.</PullQuote>
     </>
   );
 }
