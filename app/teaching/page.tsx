@@ -1,24 +1,23 @@
 import { FeatureGrid, PageHero, PullQuote, TextLink } from "@/components/primitives";
 
-export const metadata = { title: "Teaching, LOTTE & Innovation Electives" };
+export const metadata = { title: "Student Electives in Breast Surgery, LOTTE & MedTech Innovation" };
 
 export default function Teaching() {
   return (
     <>
       <PageHero
         number="05"
-        eyebrow="Teaching"
-        title="Teaching, LOTTE &"
-        italic="Innovation Electives."
-        intro="Dr Chia’s teaching platform brings together clinical breast surgery education, transdisciplinary learning, digital health innovation, and medtech translation. His educational work is anchored in LOTTE — Learning Oriented Teaching in Transdisciplinary Education — and has expanded into structured opportunities for students interested in breast cancer care, surgical innovation, and clinician-led medtech development."
+        eyebrow="Education & Electives"
+        title="Student Electives in Breast Surgery,"
+        italic="LOTTE & MedTech Innovation."
+        intro="Opportunities for students to learn through transdisciplinary breast cancer care, digital health innovation, research, and clinician-led medtech translation."
       />
 
       <section id="teaching-electives" className="page-shell border-x border-t hairline px-5 py-14 sm:px-10">
         <p className="muted max-w-4xl text-base leading-8 sm:text-lg">
-          Through these pathways, students are exposed not only to breast surgery
-          as a clinical discipline, but also to the wider ecosystem of patient
-          communication, multidisciplinary care, digital health, research,
-          industry collaboration, and responsible clinical translation.
+          The page brings together three student-facing opportunities: the LOTTE
+          Breast Cancer Learning Journey, the REBORN Digital Health & MedTech
+          Innovation Elective, and the Research Assistant / Gap-Year Attachment.
         </p>
       </section>
 
