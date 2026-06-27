@@ -1,12 +1,5 @@
-import { FeatureGrid, PageHero, TextLink } from "@/components/primitives";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Breast Conservation Research" };
-
-export default function Research() {
-  return <>
-    <PageHero number="04" eyebrow="Breast conservation research" title="Evidence for surgery" italic="and life after it." intro="An academic programme centred on breast conservation: who benefits, how surgery can be improved, what outcomes matter to patients, and how evidence from Asian populations can strengthen care."/>
-    <FeatureGrid items={[{index:"01",title:"Margins & re-operation",text:"Evaluating intra-operative margin assessment and surgical approaches intended to reduce avoidable repeat surgery after breast-conserving treatment."},{index:"02",title:"PROMs & quality of life",text:"Using patient-reported outcome measures to understand recovery, body image, confidence, symptoms and quality of life after surgery."},{index:"03",title:"Asian outcomes",text:"Studying breast surgery outcomes in Asian populations to strengthen evidence that is relevant to patients and health systems in the region."}]}/>
-    <section className="page-shell py-24"><div className="grid gap-14 lg:grid-cols-[.7fr_1.3fr]"><div><p className="eyebrow text-[var(--coral)]">Collaboration themes</p><p className="muted mt-6 max-w-sm text-[15px] leading-7">Clinically grounded questions suited to multidisciplinary, multicentre and translational collaboration.</p></div><div>{["Breast conservation rates, selection and outcomes","Oncoplastic and partial breast reconstruction","Intra-operative margin assessment and re-excision","Patient-reported outcomes, body image and quality of life","Asian breast surgery outcomes and health services research","Digital decision support and implementation science"].map((x,i)=><div key={x} className="grid grid-cols-[50px_1fr] border-t hairline py-7"><span className="text-xs font-bold text-[var(--coral)]">0{i+1}</span><h2 className="serif text-3xl leading-tight sm:text-4xl">{x}</h2></div>)}</div></div></section>
-    <section className="bg-[var(--coral)] py-20 text-white"><div className="page-shell grid gap-8 lg:grid-cols-[.6fr_1.4fr]"><div><p className="eyebrow">Academic collaboration</p><div className="mt-8"><TextLink href="/contact">Explore breast conservation research themes</TextLink></div></div><p className="serif text-3xl leading-tight sm:text-5xl">Clement is an NMRC Award Recipient and collaborates across healthcare, academia and industry, including work with A*STAR.</p></div></section>
-  </>;
+export default function ResearchRedirect() {
+  redirect("/research-innovation");
 }

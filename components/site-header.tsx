@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
-  ["Breast Conservation", "/breast-conservation"], ["Clinical Work", "/clinical-work"], ["Innovation", "/innovation"],
-  ["Research", "/research"], ["Electives", "/teaching"], ["Fellowship", "/fellowship"], ["Media & Articles", "/media-articles"],
+  ["Breast Conservation", "/breast-conservation"], ["Clinical Work", "/clinical-work"], ["Research & Innovation", "/research-innovation"],
+  ["Electives", "/teaching"], ["Fellowship", "/fellowship"], ["Media & Articles", "/media-articles"],
 ];
 
 export function SiteHeader() {
