@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
-  ["Breast Conservation", "/breast-conservation"], ["Clinical Work", "/clinical-work"], ["Research & Innovation", "/research-innovation"],
+  ["Breast Conservation", "/breast-conservation"], ["Research & Innovation", "/research-innovation"],
   ["Electives", "/teaching"], ["Fellowship", "/fellowship"], ["Media & Articles", "/media-articles"],
 ];
 

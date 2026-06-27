@@ -1,14 +1,5 @@
-import { FeatureGrid, PageHero, PullQuote, TextLink } from "@/components/primitives";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Clinical Work | Breast-Conserving & Oncoplastic Surgery" };
-
-export default function Clinical() {
-  return <>
-    <PageHero number="02" eyebrow="Clinical work" title="Breast cancer surgery with" italic="conservation in mind." intro="Clement’s clinical practice centres on helping each patient understand whether breast conservation is oncologically appropriate, and how oncoplastic surgery or partial breast reconstruction may form part of that plan."/>
-    <FeatureGrid items={[{index:"01",title:"Breast-conserving surgery",text:"Removal of the cancer with a rim of surrounding tissue while preserving the rest of the breast. It is suitable for some, but not all, patients."},{index:"02",title:"Oncoplastic breast surgery",text:"Combining cancer removal with reconstructive techniques to reshape the breast and reduce deformity where appropriate."},{index:"03",title:"Partial breast reconstruction",text:"Repairing the area affected by cancer removal using nearby breast tissue or another approach selected for the individual."}]}/>
-    <section className="page-shell grid gap-14 py-24 lg:grid-cols-[.72fr_1.28fr]"><div><p className="eyebrow text-[var(--coral)]">Understanding suitability</p><h2 className="serif mt-8 text-4xl leading-none tracking-[-.03em]">What shapes a surgical recommendation?</h2></div><div>{["The size and position of the cancer in relation to the breast","Whether clear cancer margins can be achieved","Breast shape, volume and reconstructive options","Other treatment needs, including radiotherapy","Health, recovery priorities and personal preferences"].map((x,i)=><div key={x} className="grid grid-cols-[42px_1fr] border-t hairline py-6"><span className="text-xs text-[var(--coral)]">0{i+1}</span><p className="serif text-2xl leading-tight">{x}</p></div>)}</div></section>
-    <section className="bg-[var(--ink)] py-24 text-white"><div className="page-shell grid gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p className="eyebrow text-[var(--lime)]">Shared decision-making</p><p className="muted-on-dark mt-6 max-w-sm text-[15px] leading-7">The aim is not to promote one operation, but to make the available and medically appropriate options understandable.</p></div><div className="space-y-10">{["Understand what each operation involves.","Discuss possible benefits, limitations and risks.","Consider body image, confidence, recovery and quality of life.","Choose an oncologically appropriate plan together."].map((x,i)=><div key={x} className="grid grid-cols-[42px_1fr] border-b border-white/30 pb-8"><span className="accent-on-dark text-xs font-bold">0{i+1}</span><h2 className="serif text-3xl leading-tight sm:text-5xl">{x}</h2></div>)}</div></div></section>
-    <section className="page-shell py-16 text-center"><TextLink href="/breast-conservation">Learn about breast conservation options</TextLink></section>
-    <PullQuote>Preserving the natural breast can matter deeply, but cancer safety and individual suitability come first.</PullQuote>
-  </>;
+export default function ClinicalWorkRedirect() {
+  redirect("/breast-conservation");
 }
