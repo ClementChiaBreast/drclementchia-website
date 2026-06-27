@@ -12,7 +12,7 @@ export function PageHero({ number, eyebrow, title, italic, intro }: { number: st
       <h1 className="display my-16 max-w-5xl">{title} {italic && <i className="block font-normal text-[var(--coral)]">{italic}</i>}</h1>
       <p className="max-w-2xl text-base leading-7 text-[var(--ink-2)] sm:text-lg">{intro}</p>
     </div>
-    <div className="relative hidden overflow-hidden border-l hairline dot-grid lg:block"><Orbit className="absolute -right-12 top-20 w-[270px] text-[var(--ink)] opacity-75"/><div className="absolute bottom-10 left-8 right-8 border-t hairline pt-4 text-[11px] font-semibold uppercase leading-6 tracking-[.12em]">Breast conservation<br/>Surgery · Education<br/>Research · Innovation</div></div>
+    <div className="relative hidden overflow-hidden border-l hairline dot-grid lg:block"><div className="pointer-events-none absolute inset-x-0 top-10 bottom-36 flex items-center justify-center px-6"><Orbit className="block w-full max-w-[270px] text-[var(--ink)] opacity-75"/></div><div className="absolute bottom-10 left-8 right-8 border-t hairline pt-4 text-[11px] font-semibold uppercase leading-6 tracking-[.12em]">Breast conservation<br/>Surgery · Education<br/>Research · Innovation</div></div>
   </section>;
 }
 
