@@ -16,9 +16,6 @@ type ElectivePreview = {
   secondaryLinks?: { label: string; href: string }[];
 };
 
-// Expected approved local images, when available:
-// /public/images/electives/lotte-preview.jpg
-// /public/images/electives/reborn-preview.jpg
 const electivePreviews: ElectivePreview[] = [
   {
     category: "LOTTE · Transdisciplinary education",
@@ -27,7 +24,7 @@ const electivePreviews: ElectivePreview[] = [
     description: "Selected LOTTE writings and student learning journeys describing transdisciplinary breast cancer education, interprofessional learning, operating theatre exposure, tutorials, peer teaching and international clinical exposure.",
     cta: "Read LOTTE articles",
     href: "https://www.sma.org.sg/news/2025/March/LOTTE-Goes-Global-A-Transdisciplinary-Voyage-in-Breast-Cancer-Learning",
-    image: null,
+    image: "/images/electives/lotte-preview.jpg",
     alt: "Medical students and clinicians participating in a LOTTE breast cancer learning journey",
     secondaryLinks: [
       {
@@ -47,7 +44,7 @@ const electivePreviews: ElectivePreview[] = [
     description: "An innovation-focused elective built around REBORN, where students learn how breast cancer education and reconstruction counselling can be translated into digital health tools through needs finding, patient journey mapping, content development, user feedback, prototyping and implementation.",
     cta: "Visit REBORN Learning",
     href: "https://www.rebornlearning.com/",
-    image: null,
+    image: "/images/electives/reborn-preview.jpg",
     alt: "REBORN digital learning platform for breast cancer and reconstruction education",
   },
 ];
