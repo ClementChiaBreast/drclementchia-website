@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const links = [
   ["Breast Conservation", "/breast-conservation"], ["Clinical Work", "/clinical-work"], ["Innovation", "/innovation"],
-  ["Research", "/research"], ["Electives", "/teaching"], ["Speaking", "/speaking"], ["Media & Articles", "/media-articles"],
+  ["Research", "/research"], ["Electives", "/teaching"], ["Fellowship", "/fellowship"], ["Media & Articles", "/media-articles"],
 ];
 
 export function SiteHeader() {
